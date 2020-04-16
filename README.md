@@ -1,5 +1,7 @@
 # learning-web
 
+https://zhangweisep.github.io/learning-web/dist/index.html
+
 > A Vue.js project
 
 ## Build Setup
