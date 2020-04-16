@@ -51,9 +51,8 @@ export default {
   }
 }
 </script>
-
-<!--<style lang="scss" scoped>-->
-<style scoped>
+<!--<style scoped>-->
+<style lang="scss" scoped>
   .login-box {
     border: 1px solid #DCDFE6;
     width: 350px;
