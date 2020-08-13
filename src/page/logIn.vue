@@ -40,9 +40,19 @@ export default {
     onSubmit (formName) {
       // 为表单绑定验证功能
       this.$refs[formName].validate((valid) => {
+        debugger
         if (valid) {
-          // 使用 vue-router 路由到指定页面，该方式称之为编程式导航
-          this.$router.push('/')
+          this.$axios({
+            method: 'post',
+            url: '/sysUser/testApi',
+            data: {
+              userName: this.form.username,
+              password: this.form.password
+            }
+          }).then(result => {
+            // 使用 vue-router 路由到指定页面，该方式称之为编程式导航
+            this.$router.push(result.data)
+          })
         } else {
           return false
         }
